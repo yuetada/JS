@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Responsive Navigation Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="style3.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <nav>
+        <div class="logo">非洲面膜</div>
+        <input type="checkbox" id="click">
+        <label for="click" class="menu-btn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+          <li><a href="index.html">首頁</a></li>
+          <li><a class="active" href="index_servermods.html">伺服器模組</a></li>
+          <li><a href="index_servermods_petition.html">模組請願</a></li>
+          <li><a href="index_Install.html">安裝教學</a></li>
+          <li><a href="index_FAQ.html">FAQ</a></li>
+          <li><a href="index_article.html">發布文章</a></li>
+        </ul>
+    </nav>
+    <div class="sidebar">
+      <div class="logo_content">
+        <div class = "logo">
+          <div class="logo_name">非洲面膜</div>
+        </div>
+        <i class="bx bx-menu" id="btn" ;></i>
+      </div>
+      <ul class="nav_list">
+        <!-- <li>
+            <i class="bx bx-search" ></i>
+            <input type="text" placeholder="Search...">
+            <span class="tooltip">Search</span> -->
+        </li>
+        <li>
+          <a href="#A1" >
+            <i class='bx bxs-chevron-right' ></i>
+            <span class="links_name">UI</span>
+          </a>
+          <!-- <span class="tooltip">UI</span> -->
+        </li>
+        <li>
+          <a href="#A2">
+            <i class='bx bxs-chevron-right' ></i>
+            <span class="links_name">生態</span>
+          </a>
+          <!-- <span class="tooltip">生態</span> -->
+        </li>
+        <li>
+          <a href="#A3">
+            <i class='bx bxs-chevron-right' ></i>
+            <span class="links_name">生物、食物</span>
+          </a>
+          <!-- <span class="tooltip">生物、食物</span> -->
+        </li>
+        <li>
+          <a href="#A4">
+            <i class='bx bxs-chevron-right' ></i>
+            <span class="links_name">功能性</span>
+          </a>
+          <!-- <span class="tooltip">功能性</span> -->
+        </li>
+        <li>
+          <a href="#A5">
+            <i class='bx bxs-chevron-right' ></i>
+            <span class="links_name">家俱、裝飾</span>
+          </a>
+          <!-- <span class="tooltip">家俱、裝飾</span> -->
+        </li>
+        <li>
+          <a href="#A6">
+            <i class='bx bxs-chevron-right' ></i>
+            <span class="links_name">運輸設施、坐騎</span>
+          </a>
+          <!-- <span class="tooltip">運輸設施、坐騎</span> -->
+        </li>
+        <li>
+          <a href="#A7">
+            <i class='bx bxs-chevron-right' ></i>
+            <span class="links_name">前置</span>
+          </a>
+          <!-- <span class="tooltip">前置</span> -->
+        </li>
+      </ul>
+    </div>
+    <script>
+      let btn = document.querySelector("#btn");
+      let sidebar = document.querySelector(".sidebar");
+      let searchBtn = document.querySelector(".bx-search");
+    
+      btn.onclick = function() {
+        sidebar.classList.toggle("active")
+      }
+      searchBtn.onclick = function() {
+        sidebar.classList.toggle("active")
+      }
+    </script>
+    <div class="servers">
+        <ul>
+            <br/>
+            <p class="title" >【已裝模組】</p>
+            <br/>
+            <p  class="bx bxs-chevron-right subtitle" id="A1" >UI</p>
+            <li><a class="href" href="https://www.curseforge.com/minecraft/mc-mods/appleskin">appleskin</a> 顯示食物的補充血量及飽食度</li>
+            <li><a class="href" href="https://www.curseforge.com/minecraft/mc-mods/armor-visibility">armor-visibility</a> 盔甲隱藏</li>
+            <li><a class="href" href="https://www.curseforge.com/minecraft/mc-mods/dualwielding">dualwielding</a> 雙持武器(可當桐人)</li>
+            <li><a class="href" href="https://www.curseforge.com/minecraft/mc-mods/ellemes-container-library"> ellemes-container-library</a> 可選擇大容量箱子的檢視方式</li>
+            <li><a class="href" href="https://www.curseforge.com/minecraft/mc-mods/healthcare">healthcare</a> 血量顯示</li>
+            <br/>
+            <p  class="bx bxs-chevron-right subtitle" id="A2" >生態</p>
+            <li><a class="href" href="https://www.curseforge.com/minecraft/mc-mods/betternether">better-nether</a> 豐富化地獄生態</li>
+            <li><a class="href" href="https://www.curseforge.com/minecraft/mc-mods/betterend">better-end</a> 豐富化終界生態</li>
+            <li><a class="href" href="https://www.curseforge.com/minecraft/mc-mods/appleskin">eden-ring</a> 伊甸星系</li>
+            <br/>
+            <p class="bx bxs-chevron-right subtitle" id="A3" >生物、食物</p>
+            <li><a class="href" href="https://www.curseforge.com/minecraft/mc-mods/croptopia">Croptopia</a> 多種食物、農作物</li>
+            <li><a class="href" href="https://www.curseforge.com/minecraft/mc-mods/loot-goblins">lootgoblins</a> 哥布林</li>
+            <li><a class="href" href="https://www.curseforge.com/minecraft/mc-mods/appleskin">appleskin</a> 顯示食物的補充血量及飽食度</li>
+            <li><a class="href" href="https://www.curseforge.com/minecraft/mc-mods/rats-mischief">ratsmischief</a> 老鼠</li>
+            <br/>
+            <p  class="bx bxs-chevron-right subtitle" id="A4" >功能性</p>
+            <li><a class="href" href="https://www.curseforge.com/minecraft/mc-mods/expanded-storage">expandedstorage</a> 箱子裝下更多物品</li>
+            <li><a class="href" href="https://www.curseforge.com/minecraft/mc-mods/falling-tree">FallingTree</a> 一鍵砍樹</li>
+            <li><a class="href" href="https://www.curseforge.com/minecraft/mc-mods/inventory-profiles-next">InventoryProfilesNext</a> 整理包包</li>
+            <li><a class="href" href="https://www.curseforge.com/minecraft/mc-mods/jei">JEI</a> 物品檢索相關</li>
+            <li><a class="href" href="https://www.curseforge.com/minecraft/mc-mods/mmmmmmmmmmmm">MmmMmmMmmMmm</a> 測傷假人、嚇退生物</li>
+            <li><a class="href" href="https://www.curseforge.com/minecraft/mc-mods/mob-scarecrows">mobscarecrow</a> 嚇退生物</li>
+            <li><a class="href" href="https://www.curseforge.com/minecraft/mc-mods/more-totems-of-undying">more-totems</a> 製作功能性圖騰</li>
+            <li><a class="href" href="https://www.curseforge.com/minecraft/mc-mods/plant-in-a-jar">plantinajar</a> 玻璃罐子內種植</li>
+            <li><a class="href" href="https://www.curseforge.com/minecraft/mc-mods/simple-backpack-fabric">SimpleBackpack</a> 3種包包</li>
+            <li><a class="href" href="https://www.curseforge.com/minecraft/mc-mods/plant-in-a-jar">plantinajar</a> 玻璃罐子內種植</li>
+            <li><a class="href" href="https://www.curseforge.com/minecraft/mc-mods/strawgolem-reborn">Strawgolem</a> 種植稻草人</li>
+            <li><a class="href" href="https://www.curseforge.com/minecraft/mc-mods/journeymap">journeymap</a> 小地圖</li>
+            <br/>
+            <p  class="bx bxs-chevron-right subtitle" id="A5" >家俱、裝飾</p>
+            <li><a class="href" href="https://www.curseforge.com/minecraft/mc-mods/modern-glass-doors">glassdoor</a> 更多門樣式</li>
+            <br/>
+            <p  class="bx bxs-chevron-right subtitle" id="A6"  >運輸設施、坐騎</p>
+            <li><a class="href" href="https://www.curseforge.com/minecraft/mc-mods/macaws-bridges">mcw-bridges</a> 橋梁</li>
+            <li><a class="href" href="https://www.curseforge.com/minecraft/mc-mods/megaparrot">megaparrot</a> 大型鸚鵡坐騎</li>
+            <li><a class="href" href="https://www.curseforge.com/minecraft/mc-mods/minecraft-transit-railway">MTR</a> 地鐵</li>
+            <li><a class="href" href="https://www.curseforge.com/minecraft/mc-mods/grims-transportables">transportable</a> 馬車</li>
+            <br/>
+            <p class="bx bxs-chevron-right subtitle" id="A7" >前置</p>
+            <li><a class="href" href="https://www.curseforge.com/minecraft/mc-mods/architectury-api">architectury</a> 遊戲加載優化</li>
+            <li><a class="href" href="https://www.curseforge.com/minecraft/mc-mods/cloth-config">cloth-config</a> 畫面配置相關</li>
+            <li><a class="href" href="https://www.curseforge.com/minecraft/mc-mods/fabric-api">fabric-api</a> 遊戲能與模組更好的兼容</li>
+            <li><a class="href" href="https://www.curseforge.com/minecraft/mc-mods/geckolib">geckolib</a> 模組兼容</li>
+            <li><a class="href" href="https://www.curseforge.com/minecraft/mc-mods/library-ferret-fabric">LibraryFerret</a> 模組代碼庫</li>
+            <li><a class="href" href="https://www.curseforge.com/minecraft/mc-mods/modmenu">modmenu</a> 檢查自己裝載的MOD</li>
+            <li><a class="href" href="https://www.curseforge.com/minecraft/mc-mods/bclib">bclib</a> 部分模組前置</li>
+            <li><a class="href" href="https://www.curseforge.com/minecraft/mc-mods/stimmedcow-nomorerecipeconflict"> no_crafting_recipe</a> 製作衝突解決</li>  
+            <li><a class="href" href="https://www.curseforge.com/minecraft/mc-mods/skylib">skylorlib</a> 模組代碼庫</li>
+            <li><a class="href" href="https://www.curseforge.com/minecraft/mc-mods/sodium">sodium</a> 強大的遊戲優化</li>
+            <br/>
+        </ul>
+    </div>
+  </body>
+</html>

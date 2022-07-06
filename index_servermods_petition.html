@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Responsive Navigation Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="style3.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <nav>
+        <div class="logo">非洲面膜</div>
+        <input type="checkbox" id="click">
+        <label for="click" class="menu-btn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+          <li><a href="index.html">首頁</a></li>
+          <li><a href="index_servermods.html">伺服器模組</a></li>
+          <li><a class="active" href="index_servermods_petition.html">模組請願</a></li>
+          <li><a href="index_Install.html">安裝教學</a></li>
+          <li><a href="index_FAQ.html">FAQ</a></li>
+          <li><a href="index_article.html">發布文章</a></li>
+        </ul>
+    </nav>
+    <div class="sidebar">
+      <div class="logo_content">
+        <div class = "logo">
+          <div class="logo_name">非洲面膜</div>
+        </div>
+        <i class="bx bx-menu" id="btn" ;></i>
+      </div>
+      <ul class="nav_list">
+        <!-- <li>
+            <i class="bx bx-search" ></i>
+            <input type="text" placeholder="Search...">
+            <span class="tooltip">Search</span> -->
+        </li>
+        <li>
+          <a href="#A1" >
+            <i class='bx bxs-chevron-right' ></i>
+            <span class="links_name">UI</span>
+          </a>
+          <!-- <span class="tooltip">UI</span> -->
+        </li>
+        <li>
+          <a href="#A2">
+            <i class='bx bxs-chevron-right' ></i>
+            <span class="links_name">生態</span>
+          </a>
+          <!-- <span class="tooltip">生態</span> -->
+        </li>
+        <li>
+          <a href="#A3">
+            <i class='bx bxs-chevron-right' ></i>
+            <span class="links_name">生物、食物</span>
+          </a>
+          <!-- <span class="tooltip">生物、食物</span> -->
+        </li>
+        <li>
+          <a href="#A4">
+            <i class='bx bxs-chevron-right' ></i>
+            <span class="links_name">功能性</span>
+          </a>
+          <!-- <span class="tooltip">功能性</span> -->
+        </li>
+        <li>
+          <a href="#A5">
+            <i class='bx bxs-chevron-right' ></i>
+            <span class="links_name">家俱、裝飾</span>
+          </a>
+          <!-- <span class="tooltip">家俱、裝飾</span> -->
+        </li>
+      </ul>
+    </div>
+    <script>
+      let btn = document.querySelector("#btn");
+      let sidebar = document.querySelector(".sidebar");
+      let searchBtn = document.querySelector(".bx-search");
+    
+      btn.onclick = function() {
+        sidebar.classList.toggle("active")
+      }
+      searchBtn.onclick = function() {
+        sidebar.classList.toggle("active")
+      }
+    </script>
+    <div class="servers">
+        <ul>
+            <br/>
+            <p class="title" >【模組新增請願】</p>
+            <br/>
+            <p  class="bx bxs-chevron-right subtitle" id="A1" >UI</p>
+            <li><a class="href" href="https://www.9minecraft.net/hardcore-revival-mod/">hardcore revival</a> 其他玩家倒下後不會立刻死亡 可由附近玩家救助</li>
+            <li><a class="href" href="https://www.9minecraft.net/vanityslots-mod/">vanityslots</a> 使裝備分為外觀用及實際用 (隱藏盔甲的一種?) </li>
+            <li><a class="href" href="https://www.9minecraft.net/clumps-mod/">Clumps</a> 經驗球合為一顆 減少伺服器延遲</li>
+            <br/>
+            <p  class="bx bxs-chevron-right subtitle" id="A2" >生態</p>
+            <li><a class="href" href="https://www.9minecraft.net/bosses-of-mass-destruction-mod/">Bosses of Mass Destruction</a> 新增4種強力BOSS及生態聚落和相關裝備</li>
+            <li><a class="href" href="https://www.9minecraft.net/awesome-dungeon-mod/">awesome dungeon</a> 在各個世界新增新的建築提供更多探索樂趣</li>
+            <br/>
+            <p class="bx bxs-chevron-right subtitle" id="A3" >生物、食物</p>
+            <li><a class="href" href="https://www.9minecraft.net/adventurez-mod/">AdventureZ</a> 新增地獄生物</li>
+            <li><a class="href" href="https://www.9minecraft.net/aphid-additions-mod/">aphid additions</a> 終界新增2種生物 一種可被馴服為坐騎</li>
+            <li><a class="href" href="https://www.9minecraft.net/hedgehogs-mod/">hedgehogs</a> 可以養刺蝟</li>
+            <br/>
+            <p  class="bx bxs-chevron-right subtitle" id="A4" >功能性</p>
+            <li><a class="href" href="https://www.9minecraft.net/goblin-traders-mod/">MrCrayfish's Goblin Traders</a> 新增會出售稀有物品的小哥布林商人</li>
+            <li><a class="href" href="https://www.9minecraft.net/lootr-mod/">Lootr</a> 每個野外戰利品箱子每人都可以開啟並領取內容物 (不知道會不會影響現有的箱子)</li>
+            <li><a class="href" href="https://www.9minecraft.net/doggo-mod/">Doggo</a> 可以跟狗狗玩球 狗狗會有多一些動作 可以做食盆</li>
+            <br/>
+            <p  class="bx bxs-chevron-right subtitle" id="A5" >家俱、裝飾</p>
+            <li><a class="href" href="https://www.9minecraft.net/amethyst-equipment-mod/">Amethyst Equipment </a> 新增紫水晶系列裝備 讓紫水晶不那麼沒用</li>
+            <li><a class="href" href="https://www.9minecraft.net/plushie-mod/">Plushie</a> 新增各種生物的玩偶可供裝飾</li>
+            <li><a class="href" href="https://www.curseforge.com/minecraft/mc-mods/majos-broom">majos broom</a> 新增魔女帽、魔女長袍、飛行掃把( 掃把建議禁用)</li>
+            <br/>
+        </ul>
+    </div>
+  </body>
+</html>

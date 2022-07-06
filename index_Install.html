@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Responsive Navigation Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="style3.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <nav>
+        <div class="logo">非洲面膜</div>
+        <input type="checkbox" id="click">
+        <label for="click" class="menu-btn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+          <li><a href="index.html">首頁</a></li>
+          <li><a href="index_servermods.html">伺服器模組</a></li>
+          <li><a href="index_servermods_petition.html">模組請願</a></li>
+          <li><a class="active" href="index_Install.html">安裝教學</a></li>
+          <li><a href="index_FAQ.html">FAQ</a></li>
+          <li><a href="index_article.html">發布文章</a></li>
+        </ul>
+    </nav>
+    <div class="sidebar">
+      <div class="logo_content">
+        <div class = "logo">
+          <div class="logo_name">非洲面膜</div>
+        </div>
+        <i class="bx bx-menu" id="btn" ;></i>
+      </div>
+      <ul class="nav_list">
+        <!-- <li>
+            <i class="bx bx-search" ></i>
+            <input type="text" placeholder="Search...">
+            <span class="tooltip">Search</span> -->
+        </li>
+        <li>
+          <a href="#A1" >
+            <i class='bx bxs-chevron-right' ></i>
+            <span class="links_name">安裝流程</span>
+          </a>
+          <!-- <span class="tooltip">UI</span> -->
+        </li>
+      </ul>
+    </div>
+    <script>
+      let btn = document.querySelector("#btn");
+      let sidebar = document.querySelector(".sidebar");
+      let searchBtn = document.querySelector(".bx-search");
+    
+      btn.onclick = function() {
+        sidebar.classList.toggle("active")
+      }
+      searchBtn.onclick = function() {
+        sidebar.classList.toggle("active")
+      }
+    </script>
+    <div class="download">
+        <ul>
+            <br/>
+            <p class="title" >【安裝教學】</p>
+            <br/>
+            <p  class="bx bxs-chevron-right subtitle" id="A1" >安裝流程</p>
+            <li style="list-style-type:decimal;"><a class="href" href="https://www.9minecraft.net/hardcore-revival-mod/">hardcore revival</a> 其他玩家倒下後不會立刻死亡 可由附近玩家救助</li>
+            <li style="list-style-type:decimal;"><a class="href" href="https://maven.fabricmc.net/net/fabricmc/fabric-installer/0.11.0/fabric-installer-0.11.0.exe">安裝Fabric</a> 不要自己挑路徑,讓他用appdata裡面那個原生的路徑</li>
+            <li style="list-style-type:decimal;"><a class="href" >如果你上面步驟跳錯,可能是你電腦從來沒打開過麥塊,先去啟動器開一次遊戲關掉後再試一次</a></li>
+            <li style="list-style-type:decimal;"><a class="href" >打開你的麥塊啟動器,上面分頁點“安裝檔”,滑鼠移到中間出現的Fabric右側(如果沒有右上角勾一下v模組)</a></li>
+            <li style="list-style-type:decimal;"><a class="href" >點文件夾圖案打開,也可以打%appdata%打開(.minecraft\mods) (如果沒有mods文件夾自己創一個就可以了)</a></li>
+            <li style="list-style-type:decimal;"><a class="href" href="https://drive.google.com/file/d/1l2e2Ptd-iNVzUWiF5jmo6UfokmJivhwU/view?usp=sharing">基礎mods包</a> 有小地圖 <a style="color:rgb(4, 0, 255);"><i><b>2022/06/29</b></i></a></li>
+            <li style="list-style-type:decimal;"><a class="href" >再次回到麥塊啟動器,在Fabric右邊點那三個點編輯打開設定,點右下的“更多選項”</a></li>
+            <li style="list-style-type:decimal;"><a class="href" >在 “JVM參數這欄” --->-Xmx2G,建議改成Xmx4G或Xmx6G(這是你打算分配給遊戲的記憶體量,默認的2G偏少容易卡)</a></li>
+            <li style="list-style-type:decimal;"><a class="href" >然後你就完成設定啦,用Fabric按開始遊戲就可以啟動了 </a></li>
+            <li style="list-style-type:decimal;"><a class="href" >進入遊戲後，按新增伺服器(可取名)或直接連線都可以,IP:Discord有資訊,新增伺服器(可取名)或直接連線都可</a></li>
+            <li style="list-style-type:decimal;"><a class="href" >第一次連進去會彈一個YES or NO,選“YES”然後給遊戲重啟,下一次應該不會再出咯</a></li>
+            <br/>
+
+        </ul>
+    </div>
+  </body>
+</html>

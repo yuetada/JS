@@ -1,0 +1,30 @@
+div ul p.title{
+    font-size:30px;
+    margin-left:100px;
+}
+
+div.servers ul li{
+    color:rgb(19, 109, 1);
+    font-size:20px;
+    margin-left:15%;
+}
+div ul p.subtitle{
+    color:black;
+    margin-left:15%;
+    margin-bottom:-10px;
+    font-size:20px;
+}
+
+div ul li a.href{
+    text-decoration:none;
+}
+
+.title{
+    font-size:30px;
+    margin-left:250px;
+}
+div.download ul li{
+    color:rgb(0, 0, 0);
+    font-size:20px;
+    margin-left:15%;
+}
